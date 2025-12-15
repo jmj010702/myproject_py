@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: recommandation
+
+server:
+  port: 8080
+
+# Flask 추천 API 설정
+recommendation:
+  api:
+    base-url: http://localhost:5000
+    timeout: 5000
+
+# 로깅 설정
+logging:
+  level:
+    com.Recipe.recommandation: DEBUG
+    org.springframework.web: INFO
