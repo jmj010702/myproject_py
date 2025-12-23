@@ -1,18 +1,22 @@
-spring:
-  application:
-    name: recommandation
+# ============================================================================
+# üìÑ ÌååÏùº: application.yml
+# ÏúÑÏπò: src/main/resources/application.yml
+# ============================================================================
 
 server:
   port: 8080
 
-# Flask √ﬂ√µ API º≥¡§
+spring:
+  application:
+    name: recommendation-service
+
+# Flask API ÏÑ§Ï†ï
 recommendation:
   api:
     base-url: http://localhost:5000
-    timeout: 5000
 
-# ∑Œ±Î º≥¡§
+# Î°úÍπÖ ÏÑ§Ï†ï
 logging:
   level:
-    com.Recipe.recommandation: DEBUG
+    com.Recipe.recommandation: INFO
     org.springframework.web: INFO

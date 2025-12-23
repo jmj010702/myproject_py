@@ -1,0 +1,1 @@
+{"num_users": 5001, "num_recipes": 1000, "embedding_dim": 64, "mlp_layers": [128, 64, 32, 16]}
