@@ -13,7 +13,8 @@ spring:
 # Flask API 설정
 recommendation:
   api:
-    base-url: http://localhost:5000
+    base-url: http://localhost:5002
+
 
 # 로깅 설정
 logging:

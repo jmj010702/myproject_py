@@ -318,7 +318,7 @@ if __name__ == '__main__':
     rec_system.load_models()
     
     print("\n📡 서버 실행 중...")
-    print("  - URL: http://localhost:5000")
+    print("  - URL: http://localhost:5002")
     print("  - 엔드포인트:")
     print("    • POST /recommend/personalized - 개인화 추천")
     print("    • POST /recommend/similar - 유사 레시피")
@@ -326,4 +326,4 @@ if __name__ == '__main__':
     print("    • GET /health - 헬스 체크")
     print("="*70 + "\n")
     
-    app.run(host='0.0.0.0', port=5000, debug=False)
+    app.run(host='0.0.0.0', port=5002, debug=False)
