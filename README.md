@@ -330,6 +330,8 @@ CONFIG['epochs'] = 20  # 50 → 20
 
 ---
 
+
+
 ## ✅ **체크리스트**
 
 ### 구현
@@ -381,6 +383,31 @@ CONFIG['epochs'] = 20  # 50 → 20
 
 프로젝트 관련 질문이나 이슈는 GitHub Issues에 등록해주세요.
 
----
+
+
+## 통신방식 
+Springboot <-> Flask
+아키텍처 :
+프론트엔드 → Spring Boot (포트 8080) → Flask (포트 5000) → NCF 모델
+Spring Boot가 중간 API 게이트웨이 역할, Flask가 실제 추천 엔진
+
+## 추천 알고리즘 기술 설명 
+사용 기술 : NCF 
+3가지 모델 조합 
+GMF (Generalized Matrix Factorization)
+
+전통적인 Matrix Factorization의 신경망 버전
+사용자-레시피 임베딩의 Element-wise 곱셈
+
+MLP (Multi-Layer Perceptron)
+
+비선형 관계 학습
+4개 히든 레이어: [128, 64, 32, 16]
+
+NeuMF (Neural Matrix Factorization)
+
+GMF + MLP 결합
+
+
 
 **Good Luck! 🍀**
