@@ -273,7 +273,7 @@ simulator = InteractionSimulator(recipes_df, num_users=1000)  # 5000 → 1000
 CONFIG['epochs'] = 20  # 50 → 20
 ```
 
----
+------
 
 ## 📈 **성능 최적화 팁**
 
